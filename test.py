@@ -60,8 +60,6 @@ class Plotting:
 
         st.write("")
         st.subheader("2.Pairplots")
-        # Sample Data (replace with your actual data)
-        self.data = sns.load_dataset('iris')
 
         # UI selections
         self.hue = st.selectbox("Group-by (hue)", ["None", "Clusters", "Gender"])
