@@ -46,7 +46,7 @@ def main():
     # Pages --> Instantiations
     if raw_data:
         df = pd.read_csv(raw_data)
-        if options == "Home Page":
+        if options == "Homepage":
             home = Home(df)
             home.datasetOverview()
 
