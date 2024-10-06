@@ -90,6 +90,7 @@ class Clustering:
         selected_cluster = []
         if not user_selection:
             st.warning("Input fields must be filled")
+
         col1, col2, col3 = st.columns([1, 0.6, 1])
         with col2:
             if st.button("select"):
