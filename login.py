@@ -5,7 +5,8 @@ import base64
 
 st.set_page_config(
     page_title="K-Means Mall Clustering",
-    page_icon="data-analysis.png"
+    page_icon="data-analysis.png",
+    layout="wide"
 )
 
 
