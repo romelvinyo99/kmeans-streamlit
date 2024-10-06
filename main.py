@@ -28,7 +28,7 @@ def main():
     # Options menu
     options = option_menu(
         menu_title=None,
-        options=[f"Home ", "Preprocessing", "Clusterings", "Visualizations", "Predictions"],
+        options=[f"Home{  }", "Preprocessing", "Clusterings", "Visualizations", "Predictions"],
         icons=["house    ", "hammer", "collection-fill", "pie-chart-fill", "gear-fill"],
         orientation="horizontal"
     )
