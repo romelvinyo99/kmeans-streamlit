@@ -87,15 +87,14 @@ class Clustering:
         except ValueError:
             st.warning("Please input value")
             return None
-        selected_cluster = None
+        selected_cluster = []
         if not user_selection:
             st.warning("Input fields must be filled")
-        else:
-            col1, col2, col3 = st.columns([1, 0.6, 1])
-            with col2:
-                if st.button("select"):
-                    selected_cluster = cluster_centers[user_selection]
-            st.success(f"Center Coordinates = {selected_cluster}")
+        col1, col2, col3 = st.columns([1, 0.6, 1])
+        with col2:
+            if st.button("select"):
+                selected_cluster = cluster_centers[user_selection]
+        st.success(f"Center Coordinates = {selected_cluster}")
 
         st.subheader("Summary")
         st.write(f"""
