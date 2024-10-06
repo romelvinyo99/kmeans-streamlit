@@ -56,7 +56,7 @@ def main():
             st.session_state.scaler = scale
             st.session_state.labeller = label
             st.session_state.preprocessed_data = data
-        if options == "Clustering":
+        if options == "Clusterings":
             if st.session_state.labeller is not None and st.session_state.scaler is not None and st.session_state.preprocessed_data is not None:
                 model = Clustering(st.session_state.preprocessed_data)
                 m = model.text()
@@ -66,7 +66,7 @@ def main():
         if options == "Visualizations":
             visual = Plotting(st.session_state.preprocessed_data)
             visual.pairplot()
-        if options == "Prediction":
+        if options == "Predictions":
             if st.session_state.model is not None:
                 model_instance = Prediction(st.session_state.preprocessed_data, st.session_state.scaler,
                                             st.session_state.labeller, st.session_state.model)
