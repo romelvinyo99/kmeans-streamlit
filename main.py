@@ -28,8 +28,8 @@ def main():
     # Options menu
     options = option_menu(
         menu_title=None,
-        options=["Home Page", "Preprocessing", "Clustering", "Visualizations", "Prediction"],
-        icons=["house", "gear-wide-connect", "collection-fill", "house", "arrow-repeat"],
+        options=["Homepage", "Preprocessing", "Clusterings", "Visualizations", "Predictions"],
+        icons=["house", "gear-wide-connect", "collection-fill", "gear-fill", "arrow-repeat"],
         orientation="horizontal"
     )
     # Global variables
