@@ -3,7 +3,8 @@ import streamlit as st
 
 
 class Prediction:
-    def __init__(self, dataframe, scaler, labeller, model):
+    def __init__(self, dataframe, scaler, labeller, model, optimal):
+        st.write("Optimal number of clusters = {optimal}")
         self.data = dataframe
         self.scaler = scaler
         self.labeller = labeller
