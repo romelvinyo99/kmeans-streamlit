@@ -8,7 +8,7 @@ import streamlit as st
 class Clustering:
     def __init__(self, dataframe):
         self.data = dataframe
-        self.target = self.data[["Gender", "Age", "Annual Income (k$)", "Spending Score (1-100)"]]
+        self.target = self.data[dataframe.columns]
         self.model = None
         self.clusters = None
 
